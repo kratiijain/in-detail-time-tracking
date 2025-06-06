@@ -1,6 +1,12 @@
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import { Figtree } from "next/font/google";
 
+export const figtree = Figtree({
+  weight: ["400", "500", "700"], // or other weights you need
+  subsets: ["latin"],
+  variable: "--font-figtree",
+});
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
@@ -20,7 +26,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} ${figtree.className} antialiased`}
       >
         {children}
       </body>
