@@ -22,7 +22,7 @@ export default function CommonHeader() {
           Gerald Yap
         </span>
         <Image
-          src="/images/iconDropDown.png"
+          src="/images/IconDropDown.png"
           alt="Description of the image"
           width={10}
           height={6}

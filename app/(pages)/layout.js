@@ -11,7 +11,7 @@ export default function AppPagesLayout({ children }) {
       <CommonHeader />
 
       {/* Main Content */}
-      <main className="ml-64 mt-16 p-8">{children}</main>
+      <main className="ml-64 mt-20 ">{children}</main>
     </div>
   );
 }
