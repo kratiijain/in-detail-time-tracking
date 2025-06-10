@@ -1,7 +1,8 @@
 import ProgressBar from "@/app/components/appComponents/progressBar";
 import Image from "next/image";
+import React from "react";
 
-export default function Dashboard() {
+export default function teamMember() {
   return (
     <div className="mx-auto w-full">
       <div className="w-full h-[10px] top-[4.4rem] fixed z-40  bg-[#E7E7E7]" />
@@ -11,7 +12,7 @@ export default function Dashboard() {
             className="sm:text-[28px] text-[20px] text-[#000000] !font-helvetica"
             style={{ fontWeight: 400 }}
           >
-            August 2025 Timesheet
+            Barbarella Smithson
           </div>
           <div className="flex justify-between items-center">
             <div className="w-[153px] h-[36px] bg-[rgba(240,240,240,1)] rounded flex justify-between p-3 items-center">
@@ -133,53 +134,6 @@ export default function Dashboard() {
           billablePercent={6}
         />
       </div>
-      <div
-        className="text-[25px] text-[#000000] !font-helvetica px-3 sm:px-8 mt-5"
-        style={{ fontWeight: 400 }}
-      >
-        Team Members
-      </div>
-      <div className="px-3 sm:px-8 mt-2">
-        <ProgressBar
-          totalHours={320}
-          completedHours={190}
-          loggedPercent={28}
-          billablePercent={66}
-          showUser={true}
-          userName="Kyle Deeley"
-        />
-      </div>
-      <div className="px-3 sm:px-8 mt-4">
-        <ProgressBar
-          totalHours={320}
-          completedHours={10}
-          loggedPercent={39}
-          billablePercent={45}
-          showUser={true}
-          userName="Steve Gaitskill"
-        />
-      </div>
-      <div className="px-3 sm:px-8 mt-4">
-        <ProgressBar
-          totalHours={320}
-          completedHours={50}
-          loggedPercent={23}
-          billablePercent={56}
-          showUser={true}
-          userName="Gerald Yapp"
-        />
-      </div>
-      <div className="px-3 sm:px-8 mt-4">
-        <ProgressBar
-          totalHours={320}
-          completedHours={120}
-          loggedPercent={78}
-          billablePercent={35}
-          showUser={true}
-          userName="Kaitlin"
-        />
-      </div>
-      <div className="w-10 h-10" />
     </div>
   );
 }

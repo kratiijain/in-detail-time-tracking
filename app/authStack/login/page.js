@@ -13,6 +13,7 @@ export default function login() {
   };
   return (
     <main className="min-h-screen flex  items-center justify-center bg-[#fff] px-4">
+      <div className="w-full h-[10px] top-0 fixed z-40  bg-[#E7E7E7]" />
       <div className="w-full max-w-sm flex flex-col items-center">
         <Image
           className=""
@@ -35,12 +36,12 @@ export default function login() {
           <input
             type="email"
             placeholder="Email Address"
-            className="w-full border border-[#fff] rounded px-4 py-2 text-[12.5px] text-[#000000]  focus:outline-none focus:ring-1 focus:ring-red-500"
+            className="w-full border border-[#fff] rounded px-4 py-2 text-[12.5px] text-[#000000] bg-[rgba(243,243,243,1)]  focus:outline-none  "
           />
           <input
             type="password"
             placeholder="Password"
-            className="w-full border border-[#fff] rounded px-4 py-2 text-[12.5px] text-[#000000]  focus:outline-none focus:ring-1 focus:ring-red-500"
+            className="w-full border border-[#fff] rounded px-4 py-2 text-[12.5px] text-[#000000] bg-[rgba(243,243,243,1)] focus:outline-none  "
           />
           <div
             className="flex justify-between items-center text-sm font-medium"
