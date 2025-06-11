@@ -1,3 +1,5 @@
+"use client";
+import { useRouter } from "next/navigation";
 import React from "react";
 
 const ProgressBar = ({
@@ -8,11 +10,19 @@ const ProgressBar = ({
   showUser = false,
   userName = "",
   userAvatar = "",
+  redirectTo = "",
 }) => {
   // const percentComplete = ((completedHours / totalHours) * 100).toFixed(1);
+  const router = useRouter();
 
+  const handleClick = () => {
+    if (redirectTo) {
+      router.push(redirectTo);
+    }
+  };
   return (
     <div
+      onClick={handleClick}
       className="w-full  p-3  rounded-md  border border-[#DEDEDE]"
       style={{
         background:

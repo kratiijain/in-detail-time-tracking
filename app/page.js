@@ -9,7 +9,7 @@ export default function Page() {
     const isLoggedIn = localStorage.getItem("isLoggedIn");
 
     if (isLoggedIn) {
-      router.push("/dashboard");
+      router.push("/dashboard/dashboard-admin");
     } else {
       router.push("/authStack/login");
     }

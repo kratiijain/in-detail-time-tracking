@@ -1,7 +1,9 @@
 "use client";
 import Image from "next/image";
+import { useRouter } from "next/navigation";
 
 export default function CommonHeader({ setIsSidebarOpen }) {
+  const router = useRouter();
   return (
     <div className="h-[70px] fixed top-0  right-0 z-60  w-full items-center flex p-3 sm:p-8 justify-between bg-[rgba(29,98,127,1)]">
       <div className="flex items-center justify-between">
@@ -24,6 +26,8 @@ export default function CommonHeader({ setIsSidebarOpen }) {
             />
           </svg>
         </button>
+        <button onClick={() => router.push("/logout")}>Logout</button>
+
         <div className="w-[120px] h-[30px] sm:w-[150px] sm:h-[35px] md:w-[175px] md:h-[41px] relative">
           <Image
             src="/images/logoHeader.png"

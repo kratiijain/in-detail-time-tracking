@@ -29,14 +29,6 @@ export default function Dashboard() {
                 className="ml-1.5 "
               />
             </div>
-            <div className="w-[26px] h-[26px] sm:w-[36px] sm:h-[36px]  relative">
-              <Image
-                src="/images/IconAdd.png"
-                alt="combined_shape_Icon"
-                fill
-                className="object-contain ml-1.5"
-              />
-            </div>
           </div>
         </div>
       </div>
@@ -147,6 +139,7 @@ export default function Dashboard() {
           billablePercent={66}
           showUser={true}
           userName="Kyle Deeley"
+          redirectTo="/dashboard/dashboard-team-members-detail"
         />
       </div>
       <div className="px-3 sm:px-8 mt-4">
@@ -157,6 +150,7 @@ export default function Dashboard() {
           billablePercent={45}
           showUser={true}
           userName="Steve Gaitskill"
+          redirectTo="/dashboard/dashboard-team-members-detail"
         />
       </div>
       <div className="px-3 sm:px-8 mt-4">
@@ -167,6 +161,7 @@ export default function Dashboard() {
           billablePercent={56}
           showUser={true}
           userName="Gerald Yapp"
+          redirectTo="/dashboard/dashboard-team-members-detail"
         />
       </div>
       <div className="px-3 sm:px-8 mt-4">
@@ -177,6 +172,7 @@ export default function Dashboard() {
           billablePercent={35}
           showUser={true}
           userName="Kaitlin"
+          redirectTo="/dashboard/dashboard-team-members-detail"
         />
       </div>
       <div className="w-10 h-10" />
