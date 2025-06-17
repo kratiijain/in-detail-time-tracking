@@ -1,3 +1,4 @@
+import ScrollToTop from "./components/appComponents/scrollToTop";
 import "./globals.css";
 import { Figtree } from "next/font/google";
 
@@ -15,7 +16,13 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`${figtree.className} antialiased`}>{children}</body>
+      <body className={`${figtree.className} antialiased`}>
+        {" "}
+        <>
+          <ScrollToTop />
+          {children}
+        </>
+      </body>
     </html>
   );
 }

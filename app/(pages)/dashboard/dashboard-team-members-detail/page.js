@@ -1,17 +1,86 @@
 "use client";
+import ClientCard from "@/app/components/appComponents/clientCard";
 import ProgressBar from "@/app/components/appComponents/progressBar";
+import { images } from "@/app/constants/images";
 import Image from "next/image";
 import React, { useState } from "react";
 
 export default function dashboardTeamMemberDetail() {
   const [modalAddTask, setModalAddTask] = useState(false);
+
+  const clients = [
+    {
+      clientName: "Apple Computers",
+      project: ["WEBSITE REVAMP", "CE456237", "IN456237", "PO456237"],
+      tasks: [
+        {
+          description:
+            "Install Wordpress theme and plugins and setup server and prepare for content and text.",
+          status: "Open",
+          logged: "4:00",
+          billable: "4:00",
+          variance: "0:00",
+          who: "CE00232",
+        },
+        {
+          description: "Install Wordpress theme and plugins and setup server.",
+          status: "Open",
+          logged: "2:00",
+          billable: "1:00",
+          variance: "1:00",
+          who: "Waqas",
+        },
+        {
+          description: "Just updated something.",
+          status: "Closed",
+          logged: "3:00",
+          billable: "3:00",
+          variance: "0:00",
+          who: "John Smith",
+        },
+      ],
+    },
+    {
+      clientName: "Dunstores",
+      project: ["LOGO DESIGN", "Verbal"],
+      tasks: [
+        {
+          description:
+            "Install Wordpress theme and plugins and setup server and prepare for content and text.",
+          status: "Open",
+          logged: "1:15",
+          billable: "0:00",
+          variance: "1:15",
+          who: "Verbal",
+        },
+        {
+          description:
+            "Just updated something. Install Wordpress theme and plugins and setup server.",
+          status: "Open",
+          logged: "2:00",
+          billable: "2:00",
+          variance: "0:00",
+          who: "Koos van Wyk",
+        },
+        {
+          description: "Just updated something.",
+          status: "Closed",
+          logged: "1:00",
+          billable: "1:00",
+          variance: "0:00",
+          who: "Koos van Wyk",
+        },
+      ],
+    },
+  ];
+
   return (
     <div className="mx-auto w-full">
       <div className="w-full h-[10px] top-[4.4rem] fixed z-40  bg-[#E7E7E7]" />
       <div className="flex w-full px-3 sm:px-8 ">
         <div className="bg-[#FFFFFF] mt-5  sm:mt-8  w-full  flex justify-between items-center">
           <div
-            className="sm:text-[28px] text-[20px] text-[#000000] !font-helvetica"
+            className="sm:text-[28px] text-[20px] text-[#000000] font-helvetica"
             style={{ fontWeight: 400 }}
           >
             Kyle Deeley
@@ -19,13 +88,13 @@ export default function dashboardTeamMemberDetail() {
           <div className="flex justify-between items-center">
             <div className="w-[153px] h-[36px] bg-[rgba(240,240,240,1)] rounded flex justify-between p-3 items-center">
               <span
-                className="sm:text-[14px] text-[12px] text-[#000000]"
+                className="sm:text-[14px] text-[12px] text-[#000000] font-helvetica "
                 style={{ fontWeight: 400 }}
               >
                 December 2025
               </span>
               <Image
-                src="/images/Icon_Dropdown.png"
+                src={images.iconDropdownCalendar}
                 alt="combined_shape_Icon"
                 width={11}
                 height={9}
@@ -33,12 +102,12 @@ export default function dashboardTeamMemberDetail() {
               />
             </div>
             <div
-              onClick={() => setModalAddTask(true)}
+              // onClick={() => setIsOpen(true)}
               className="w-[26px] h-[26px] sm:w-[36px] sm:h-[36px]  relative"
             >
               <Image
-                src="/images/IconAdd.png"
-                alt="combined_shape_Icon"
+                src={images.iconAdd}
+                alt="icon add"
                 fill
                 className="object-contain ml-1.5"
               />
@@ -138,6 +207,23 @@ export default function dashboardTeamMemberDetail() {
           loggedPercent={8}
           billablePercent={6}
         />
+      </div>
+
+      {/* <div className="bg-[#F7F7F7] rounded-md overflow-hidden mt-3 px-3 sm:px-8 pb-4">
+   
+        <div className="sm:text-[28px] text-[20px] text-[#000000] font-[400] font-helvetica mt-3">
+          granddy Computers
+        </div>
+      </div> */}
+      <div className="p-6">
+        {clients.map((client, index) => (
+          <ClientCard
+            key={index}
+            clientName={client.clientName}
+            project={client.project}
+            tasks={client.tasks}
+          />
+        ))}
       </div>
       {modalAddTask && (
         <div

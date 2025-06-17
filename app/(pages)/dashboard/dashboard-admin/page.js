@@ -1,10 +1,13 @@
+"use client";
 import ProgressBar from "@/app/components/appComponents/progressBar";
+import { images } from "@/app/constants/images";
 import Image from "next/image";
 
 export default function Dashboard() {
   return (
     <div className="mx-auto w-full">
       <div className="w-full h-[10px] top-[4.4rem] fixed z-40  bg-[#E7E7E7]" />
+
       <div className="flex w-full px-3 sm:px-8 ">
         <div className="bg-[#FFFFFF] mt-5  sm:mt-8  w-full  flex justify-between items-center">
           <div
@@ -22,7 +25,7 @@ export default function Dashboard() {
                 December 2025
               </span>
               <Image
-                src="/images/Icon_Dropdown.png"
+                src={images.iconDropdownCalendar}
                 alt="combined_shape_Icon"
                 width={11}
                 height={9}
@@ -115,7 +118,6 @@ export default function Dashboard() {
           </div>
         </div>
       </div>
-
       {/* progress bars */}
       <div className="px-3 sm:px-8">
         <ProgressBar

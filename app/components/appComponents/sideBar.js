@@ -1,3 +1,4 @@
+import { images } from "@/app/constants/images";
 import NavLink from "./navLink";
 
 export default function Sidebar({ setIsOpen, isOpen }) {
@@ -13,7 +14,7 @@ export default function Sidebar({ setIsOpen, isOpen }) {
     >
       <button
         onClick={() => setIsOpen(false)}
-        className="md:hidden absolute top-4 right-4"
+        className="md:hidden text-[#000000] absolute top-4 right-4"
       >
         ✕
       </button>
@@ -21,33 +22,45 @@ export default function Sidebar({ setIsOpen, isOpen }) {
       <nav className="mt-12">
         <NavLink
           href="/dashboard/dashboard-admin"
-          icon="/images/Icon_combined_shape.png"
+          matchPath="/dashboard"
+          icon="/images/icon-combined-shape.webp"
           label="Dashboard"
+          setIsOpen={setIsOpen}
         />
         <NavLink
-          href="/clients"
-          icon="/images/Icon_combined_shape.png"
+          href="/clients/clients-admin"
+          matchPath="/clients"
+          icon="/images/icon-combined-shape.webp"
           label="Clients"
+          setIsOpen={setIsOpen}
         />
         <NavLink
-          href="/single-projects"
-          icon="/images/Icon_combined_shape.png"
+          href="/single-projects/single-projects-admin"
+          matchPath="/single-projects"
+          icon="/images/icon-combined-shape.webp"
           label="Single Projects"
+          setIsOpen={setIsOpen}
         />
         <NavLink
-          href="/repeating-projects"
-          icon="/images/Icon_combined_shape.png"
+          href="/repeating-projects/repeating-projects-admin"
+          matchPath="/repeating-projects"
+          icon="/images/icon-combined-shape.webp"
           label="Repeating Projects"
+          setIsOpen={setIsOpen}
         />
         <NavLink
-          href="/team-members"
-          icon="/images/Icon_combined_shape.png"
+          href="/team-members/team-members-admin"
+          matchPath="/team-members"
+          icon="/images/icon-combined-shape.webp"
           label="Team Members"
+          setIsOpen={setIsOpen}
         />
         <NavLink
-          href="/settings"
-          icon="/images/Icon_combined_shape.png"
+          href="/settings/settings-admin"
+          matchPath="/settings"
+          icon="/images/icon-combined-shape.webp"
           label="Settings"
+          setIsOpen={setIsOpen}
         />
       </nav>
     </aside>

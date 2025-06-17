@@ -1,4 +1,5 @@
 "use client";
+import { images } from "@/app/constants/images";
 import Image from "next/image";
 import { useRouter } from "next/navigation";
 
@@ -26,11 +27,11 @@ export default function CommonHeader({ setIsSidebarOpen }) {
             />
           </svg>
         </button>
-        <button onClick={() => router.push("/logout")}>Logout</button>
+        {/* <button onClick={() => router.push("/logout")}>Logout</button> */}
 
         <div className="w-[120px] h-[30px] sm:w-[150px] sm:h-[35px] md:w-[175px] md:h-[41px] relative">
           <Image
-            src="/images/logoHeader.png"
+            src={images.logoHeader}
             alt="Description of the image"
             fill
             className="object-contain"
@@ -40,8 +41,8 @@ export default function CommonHeader({ setIsSidebarOpen }) {
       <div className="flex items-center cursor-pointer group mx-4">
         <div className="w-5 h-5 sm:w-9 sm:h-9 bg-white rounded-full mr-1 sm:mr-3 flex items-center justify-center text-gray-800 font-semibold text-sm relative overflow-hidden">
           <Image
-            src="/images/logoHeader.png"
-            alt="Description of the image"
+            src={images.logoHeader}
+            alt="logo header"
             layout="fill"
             objectFit="cover"
             className="rounded-full"
@@ -51,8 +52,8 @@ export default function CommonHeader({ setIsSidebarOpen }) {
           Gerald Yap
         </span>
         <Image
-          src="/images/IconDropDown.png"
-          alt="Description of the image"
+          src={images.iconDropdown}
+          alt="dropdown image"
           width={10}
           height={6}
         />

@@ -1,4 +1,5 @@
 "use client";
+import { images } from "@/app/constants/images";
 import { loginValidationRules } from "@/utils/validation";
 import Cookies from "js-cookie";
 import Image from "next/image";
@@ -25,8 +26,8 @@ export default function login() {
       <div className="w-full max-w-sm flex flex-col items-center mt-15">
         <Image
           className=""
-          src="/images/logoInDetail.png"
-          alt="Next.js logo"
+          src={images.logoIndetail}
+          alt="logo Indetail"
           width={171}
           height={222}
           priority
