@@ -32,6 +32,14 @@ export default function login() {
           height={222}
           priority
         />
+        <Image
+          className=""
+          src={images.logoIndetail}
+          alt="logo Indetail"
+          width={171}
+          height={222}
+          priority
+        />
         <h2
           className="font-bold  mb-4 mt-10 self-start "
           style={{

@@ -206,35 +206,6 @@ export default function settingsAdmin() {
               </div>
             </>
           )}
-          {activeTab === "APPROVAL TYPES" && (
-            <>
-              {approvalTypes.map((approvalTypes, idx) => (
-                <div
-                  key={approvalTypes.id}
-                  className="bg-[#F7F7F7] w-full rounded-md p-3 my-1.5 flex justify-between"
-                >
-                  <div className="text-[#000000] text-[14px] font-Figtree font-semibold">
-                    {approvalTypes.type}
-                  </div>
-                  <Image
-                    src={images.iconMenuBlack}
-                    alt="menu icon black"
-                    width={24}
-                    height={24}
-                    className="ml-5 "
-                  />
-                </div>
-              ))}
-              <div className="bg-[#F7F7F7] w-full max-w-xl rounded-md p-5 my-1.5 flex justify-between items-center">
-                <div className="text-[#000000] text-[12.5px] font-Figtree font-normal">
-                  Input Type
-                </div>
-                <button className="bg-[#217093]  transform transition-transform duration-300 hover:scale-105 px-4 py-2 rounded text-[14px] font-Figtree text-[#FFFFFF] font-semibold">
-                  SAVE TYPE
-                </button>
-              </div>
-            </>
-          )}
         </div>
       </div>
     </div>
