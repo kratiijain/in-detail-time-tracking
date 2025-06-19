@@ -57,6 +57,7 @@ export default function Sidebar({ setIsOpen, isOpen }) {
         />
         <NavLink
           href="/settings/settings-admin"
+          // href="/clients/clients-admin"
           matchPath="/settings"
           icon="/images/icon-combined-shape.webp"
           label="Settings"

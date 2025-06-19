@@ -123,10 +123,10 @@ export default function addClient() {
 
           {/* Action Buttons */}
           <div className="flex justify-between gap-4 pt-4">
-            <button className="bg-[#E7E7E7]  px-8 py-2 rounded text-[14px] font-Figtree text-[#000000] font-semibold">
+            <button className="bg-[#E7E7E7] transform transition-transform duration-300 hover:scale-105  px-8 py-2 rounded text-[14px] font-Figtree text-[#000000] font-semibold">
               Cancel
             </button>
-            <button className="bg-[#217093]  px-8 py-2 rounded text-[14px] font-Figtree text-[#FFFFFF] font-semibold">
+            <button className="bg-[#217093]  transform transition-transform duration-300 hover:scale-105 px-8 py-2 rounded text-[14px] font-Figtree text-[#FFFFFF] font-semibold">
               Save Client
             </button>
           </div>

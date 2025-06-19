@@ -10,6 +10,9 @@ import iconCombined from "../../public/images/icon-combined-shape.webp";
 import iconAddTask from "../../public/images/icon-add-task.webp";
 import iconAddProject from "../../public/images/icon-add-project.webp";
 import iconDelete from "../../public/images/icon-delete.webp";
+import iconPending from "../../public/images/icon-loader-pending.webp";
+import iconInprogress from "../../public/images/icon-clock-inprogress.webp";
+import iconClosed from "../../public/images/icon-closed.webp";
 export const images = {
   logoIndetail,
   logoHeader,
@@ -23,4 +26,7 @@ export const images = {
   iconAddTask,
   iconAddProject,
   iconDelete,
+  iconPending,
+  iconInprogress,
+  iconClosed,
 };
