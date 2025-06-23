@@ -15,11 +15,11 @@ export default function clientsAdmin() {
   ];
   return (
     <div className="mx-auto w-full">
-      <div className="w-full h-[10px] top-[4.4rem] fixed z-40  bg-[#E7E7E7]" />
+      <div className="w-full h-[10px] top-[4.4rem] fixed z-40  bg-[var(--color-gray-soft)]" />
       <div className="flex w-full px-3 sm:px-8 ">
-        <div className="bg-[#FFFFFF] mt-5  sm:mt-8  w-full  flex justify-between items-center">
+        <div className="bg-[var(--color-white)] mt-5  sm:mt-8  w-full  flex justify-between items-center">
           <div
-            className="sm:text-[28px] text-[20px] text-[#000000] !font-helvetica"
+            className="sm:text-[28px] text-[20px] text-[var(--color-black)] !font-helvetica"
             style={{ fontWeight: 400 }}
           >
             Clients{" "}
@@ -28,9 +28,9 @@ export default function clientsAdmin() {
             className="flex justify-between items-center cursor-pointer"
             onClick={() => router.push("/clients/add-client")}
           >
-            <div className="w-[118px] h-[36px] bg-[rgba(240,240,240,1)] rounded flex justify-between p-3 items-center">
+            <div className="w-[118px] h-[36px] bg-[var(--color-ghost-white)] rounded flex justify-between p-3 items-center">
               <span
-                className="sm:text-[14px] text-[12px] text-[#000000]"
+                className="sm:text-[14px] text-[12px] text-[var(--color-black)]"
                 style={{ fontWeight: 400 }}
               >
                 Add Client
@@ -46,7 +46,7 @@ export default function clientsAdmin() {
           </div>
         </div>
       </div>
-      <div className="flex gap-1 mt-5 font-Medium text-[14px] text-[#000000] font-Figtree px-3 sm:px-8">
+      <div className="flex gap-1 mt-5 font-Medium text-[14px] text-[var(--color-black)] font-Figtree px-3 sm:px-8">
         <span>ACTIVE</span>
         <span>|</span>
         <span>INACTIVE</span>
@@ -57,7 +57,7 @@ export default function clientsAdmin() {
           key={c.id}
           className="mt-2 flex  px-3 sm:px-8 items-center justify-between"
         >
-          <div className="font-Figtree font-semiBold text-[14px] rounded-md p-2 bg-[#F7F7F7] text-[#000000] ">
+          <div className="font-Figtree font-semiBold text-[14px] rounded-md p-2 bg-[var(--color-neutral-gray)] text-[var(--color-black)] ">
             {c.client} - <span className="font-normal">{c.hourlyRate}</span>
           </div>
 
@@ -85,7 +85,7 @@ export default function clientsAdmin() {
           className="fixed inset-0 z-50 flex justify-end items-start top-26 bg-opacity-30"
           onClick={() => setModalAddClient(false)}
         >
-          <div className="bg-[#F3FACE] rounded-lg shadow-lg w-[132px] h-[102px] p-3 mt-10 mr-6 relative">
+          <div className="bg-[var(--color-cream-yellow)] rounded-lg shadow-lg w-[132px] h-[102px] p-3 mt-10 mr-6 relative">
             <div className="flex items-center my-2 ">
               <Image
                 src={images.iconAddTask}
@@ -94,7 +94,7 @@ export default function clientsAdmin() {
                 height={13}
                 className="object-contain "
               />
-              <p className="text-[13px] font-Figtree text-[#000000] font-semibold leading-[14px] ml-2">
+              <p className="text-[13px] font-Figtree text-[var(--color-black)] font-semibold leading-[14px] ml-2">
                 Edit
               </p>
             </div>
@@ -106,7 +106,7 @@ export default function clientsAdmin() {
                 height={13}
                 className="object-contain "
               />
-              <p className="text-[13px] font-Figtree text-[#000000] font-semibold leading-[14px] ml-2">
+              <p className="text-[13px] font-Figtree text-[var(--color-black)] font-semibold leading-[14px] ml-2">
                 Add Client
               </p>
             </div>
@@ -118,7 +118,7 @@ export default function clientsAdmin() {
                 height={13}
                 className="object-contain "
               />
-              <p className="text-[13px] font-Figtree text-[#000000] font-semibold leading-[14px] ml-2">
+              <p className="text-[13px] font-Figtree text-[var(--color-black)] font-semibold leading-[14px] ml-2">
                 Delete
               </p>
             </div>

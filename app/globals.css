@@ -28,3 +28,31 @@ body {
   color: var(--foreground);
   font-family: "Figtree", "Helvetica Neue", sans-serif;
 }
+@theme {
+  --color-light-blue: #e0f2f9;
+  --color-light-gray: #e2e2e2;
+  --color-soft-yellow: #f6f2bb;
+  --color-powder-blue: #cfdee5;
+  --color-white: #ffffff;
+  --color-neutral-gray: #f7f7f7;
+  --color-black: #000000;
+  --color-blue-primary: #2489b3;
+  --color-blue-dark: rgba(29, 98, 127, 1);
+  --color-white-rgba: rgba(255, 255, 255, 1);
+  --color-neutral-300: #d4d4d4; /* Assuming Tailwind's neutral-300 = #D4D4D4 */
+  --color-true-black: #0a0a0a;
+  --color-gray-light: #dedede;
+  --color-gray-medium: #a3a3a3;
+  --color-blue-muted: #217093;
+  --color-gray-soft: #e7e7e7;
+  --color-blue-muted-rgba: rgba(33, 112, 147, 1);
+  --color-lightest-gray: rgba(243, 243, 243, 1);
+  --color-soft-red: #fa626b;
+  --color-light-green: #e6efb5;
+  --color-ghost-white: rgba(240, 240, 240, 1);
+  --color-cream-yellow: #f3face;
+  --color-warning-orange: rgba(243, 146, 0, 1);
+  --color-bright-blue: rgba(38, 156, 205, 1);
+  --color-sky-blue: rgba(35, 129, 169, 1);
+  --color-deep-blue: rgba(11, 88, 120, 1);
+}

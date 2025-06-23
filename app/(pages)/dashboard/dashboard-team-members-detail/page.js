@@ -76,19 +76,19 @@ export default function dashboardTeamMemberDetail() {
 
   return (
     <div className="mx-auto w-full">
-      <div className="w-full h-[10px] top-[4.4rem] fixed z-40  bg-[#E7E7E7]" />
+      <div className="w-full h-[10px] top-[4.4rem] fixed z-40  bg-[var(--color-gray-soft)]" />
       <div className="flex w-full px-3 sm:px-8 ">
-        <div className="bg-[#FFFFFF] mt-5  sm:mt-8  w-full  flex justify-between items-center">
+        <div className="bg-[var(--color-white)] mt-5  sm:mt-8  w-full  flex justify-between items-center">
           <div
-            className="sm:text-[28px] text-[20px] text-[#000000] font-helvetica"
+            className="sm:text-[28px] text-[20px] text-[var(--color-black)] font-helvetica"
             style={{ fontWeight: 400 }}
           >
             Kyle Deeley
           </div>
           <div className="flex justify-between items-center">
-            <div className="w-[153px] h-[36px] bg-[rgba(240,240,240,1)] rounded flex justify-between p-3 items-center">
+            <div className="w-[153px] h-[36px] bg-[var(--color-ghost-white)] rounded flex justify-between p-3 items-center">
               <span
-                className="sm:text-[14px] text-[12px] text-[#000000] font-helvetica "
+                className="sm:text-[14px] text-[12px] text-[var(--color-black)] font-helvetica "
                 style={{ fontWeight: 400 }}
               >
                 December 2025
@@ -117,62 +117,62 @@ export default function dashboardTeamMemberDetail() {
       </div>
 
       {/* container design - desktop and tablet */}
-      <div className=" hidden sm:flex md:flex lg:flex flex-row  h-full mt-8 justify-between items-center bg-[#FFFFFF] px-3 sm:px-8 my-5  ">
+      <div className=" hidden sm:flex md:flex lg:flex flex-row  h-full mt-8 justify-between items-center bg-[var(--color-white)] px-3 sm:px-8 my-5  ">
         <div className="flex flex-col cursor-pointer  p-3  bg-[rgba(243,146,0,1)]   w-[210px] h-[104px] justify-center items-center rounded-md ">
-          <p className="text-[#FFFFFF] text-[10px] sm:text-[13px]  font-Figtree font-semibold ">
+          <p className="text-[var(--color-white)] text-[10px] sm:text-[13px]  font-Figtree font-semibold ">
             TARGET HOURS
           </p>
-          <p className="text-[#FFFFFF] text-[25px] sm:text-[38px] font-Figtree font-medium ">
+          <p className="text-[var(--color-white)] text-[25px] sm:text-[38px] font-Figtree font-medium ">
             300
           </p>
         </div>
 
         <div className="w-7" />
         <div className="flex flex-col cursor-pointer  p-3  bg-[rgba(38,156,205,1)]   w-[210px] h-[104px] justify-center items-center rounded-md ">
-          <p className="text-[#FFFFFF] text-[10px] sm:text-[13px]  font-Figtree font-semibold ">
+          <p className="text-[var(--color-white)] text-[10px] sm:text-[13px]  font-Figtree font-semibold ">
             LOGGED HOURS
           </p>
-          <p className="text-[#FFFFFF] text-[25px] sm:text-[38px] font-Figtree font-medium ">
+          <p className="text-[var(--color-white)] text-[25px] sm:text-[38px] font-Figtree font-medium ">
             0
           </p>
         </div>
         <div className="w-7" />
         <div className="flex flex-col cursor-pointer  p-3  bg-[rgba(35,129,169,1)]   w-[210px] h-[104px] justify-center items-center rounded-md ">
-          <p className="text-[#FFFFFF] text-[10px] sm:text-[13px]  font-Figtree font-semibold ">
+          <p className="text-[var(--color-white)] text-[10px] sm:text-[13px]  font-Figtree font-semibold ">
             BILLABLE HOURS
           </p>
-          <p className="text-[#FFFFFF] text-[25px] sm:text-[38px] font-Figtree font-medium ">
+          <p className="text-[var(--color-white)] text-[25px] sm:text-[38px] font-Figtree font-medium ">
             0
           </p>
         </div>
         <div className="w-7" />
         <div className="flex flex-col cursor-pointer  p-3  bg-[rgba(11,88,120,1)]    w-[210px] h-[104px] justify-center items-center rounded-md ">
-          <p className="text-[#FFFFFF] text-[10px] sm:text-[13px]  font-Figtree font-semibold ">
+          <p className="text-[var(--color-white)] text-[10px] sm:text-[13px]  font-Figtree font-semibold ">
             UNDER/OVER
           </p>
-          <p className="text-[#FFFFFF] text-[25px] sm:text-[38px] font-Figtree font-medium ">
+          <p className="text-[var(--color-white)] text-[25px] sm:text-[38px] font-Figtree font-medium ">
             0
           </p>
         </div>
       </div>
 
       {/*  container design - mobile */}
-      <div className=" flex-col    h-full justify-center items-center bg-[#FFFFFF] my-5 px-3 block sm:hidden ">
+      <div className=" flex-col    h-full justify-center items-center bg-[var(--color-white)] my-5 px-3 block sm:hidden ">
         <div className="flex flex-row w-full justify-center items-center ">
           <div className="flex flex-col cursor-pointer bg-[rgba(243,146,0,1)]    w-[240px] h-[104px] justify-center items-center rounded-md ">
-            <p className="text-[#FFFFFF] font-Figtree font-semibold ">
+            <p className="text-[var(--color-white)] font-Figtree font-semibold ">
               TARGET HOURS
             </p>
-            <p className="text-[#FFFFFF] text-[38px]  font-Figtree font-medium ">
+            <p className="text-[var(--color-white)] text-[38px]  font-Figtree font-medium ">
               300
             </p>
           </div>
           <div className="w-7" />
           <div className="flex flex-col cursor-pointer bg-[rgba(38,156,205,1)]    w-[240px] h-[104px] justify-center items-center rounded-md ">
-            <p className="text-[#FFFFFF]  font-Figtree font-semibold ">
+            <p className="text-[var(--color-white)]  font-Figtree font-semibold ">
               LOGGED HOURS
             </p>
-            <p className="text-[#FFFFFF] text-[38px]  font-Figtree font-medium ">
+            <p className="text-[var(--color-white)] text-[38px]  font-Figtree font-medium ">
               0
             </p>
           </div>
@@ -180,19 +180,19 @@ export default function dashboardTeamMemberDetail() {
         <div className="w-7" />
         <div className="flex flex-row w-full mt-5 justify-center items-center ">
           <div className="flex flex-col cursor-pointer bg-[rgba(35,129,169,1)]   w-[240px] h-[104px] justify-center items-center rounded-md ">
-            <p className="text-[#FFFFFF]  font-Figtree font-semibold ">
+            <p className="text-[var(--color-white)] font-Figtree font-semibold ">
               BILLABLE HOURS
             </p>
-            <p className="text-[#FFFFFF] text-[38px]  font-Figtree font-medium ">
+            <p className="text-[var(--color-white)] text-[38px]  font-Figtree font-medium ">
               0
             </p>
           </div>
           <div className="w-7" />
           <div className="flex flex-col cursor-pointer bg-[rgba(11,88,120,1)]    w-[240px] h-[104px] justify-center items-center rounded-md ">
-            <p className="text-[#FFFFFF]  font-Figtree font-semibold ">
+            <p className="text-[var(--color-white)]  font-Figtree font-semibold ">
               UNDER/OVER
             </p>
-            <p className="text-[#FFFFFF] text-[38px]  font-Figtree font-medium ">
+            <p className="text-[var(--color-white)] text-[38px]  font-Figtree font-medium ">
               0
             </p>
           </div>
@@ -211,7 +211,7 @@ export default function dashboardTeamMemberDetail() {
 
       {/* <div className="bg-[#F7F7F7] rounded-md overflow-hidden mt-3 px-3 sm:px-8 pb-4">
    
-        <div className="sm:text-[28px] text-[20px] text-[#000000] font-[400] font-helvetica mt-3">
+        <div className="sm:text-[28px] text-[20px] text-[#[var(--color-black)]] font-[400] font-helvetica mt-3">
           granddy Computers
         </div>
       </div> */}
@@ -230,7 +230,7 @@ export default function dashboardTeamMemberDetail() {
           className="fixed inset-0 z-50 flex justify-end items-start top-26 bg-opacity-30"
           onClick={() => setModalAddTask(false)}
         >
-          <div className="bg-[#F3FACE] rounded-lg shadow-lg w-[132px] h-[102px] p-3 mt-10 mr-6 relative">
+          <div className="bg-[var(--color-cream-yellow)] rounded-lg shadow-lg w-[132px] h-[102px] p-3 mt-10 mr-6 relative">
             <div className="flex items-center my-2 ">
               <Image
                 src="/images/Icon_Add_Task.png"
@@ -239,7 +239,7 @@ export default function dashboardTeamMemberDetail() {
                 height={13}
                 className="object-contain "
               />
-              <p className="text-[13px] font-Figtree text-[#000000] font-semibold leading-[14px] ml-2">
+              <p className="text-[13px] font-Figtree text-[var(--color-black)] font-semibold leading-[14px] ml-2">
                 Add Task
               </p>
             </div>
@@ -251,7 +251,7 @@ export default function dashboardTeamMemberDetail() {
                 height={13}
                 className="object-contain "
               />
-              <p className="text-[13px] font-Figtree text-[#000000] font-semibold leading-[14px] ml-2">
+              <p className="text-[13px] font-Figtree text-[var(--color-black)] font-semibold leading-[14px] ml-2">
                 Add Project
               </p>
             </div>
@@ -263,7 +263,7 @@ export default function dashboardTeamMemberDetail() {
                 height={13}
                 className="object-contain "
               />
-              <p className="text-[13px] font-Figtree text-[#000000] font-semibold leading-[14px] ml-2">
+              <p className="text-[13px] font-Figtree text-[var(--color-black)] font-semibold leading-[14px] ml-2">
                 Add Client
               </p>
             </div>

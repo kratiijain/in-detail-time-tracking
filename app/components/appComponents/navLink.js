@@ -17,8 +17,10 @@ export default function NavLink({ href, matchPath, icon, label, setIsOpen }) {
     <Link
       onClick={handleClick}
       href={href}
-      className={`flex items-center px-7 py-3 transition-colors text-[#0A0A0A] ${
-        isActive ? " bg-neutral-300" : " hover:text-[rgba(29,98,127,1)]"
+      className={`flex items-center px-7 py-3 transition-colors text-[var(--color-true-black)] ${
+        isActive
+          ? " bg-[var(--color-neutral-300)]"
+          : " hover:text-[var(--color-blue-dark)]"
       }`}
     >
       <span className={`mr-4`}>

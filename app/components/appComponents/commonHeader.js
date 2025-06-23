@@ -6,7 +6,7 @@ import { useRouter } from "next/navigation";
 export default function CommonHeader({ setIsSidebarOpen }) {
   const router = useRouter();
   return (
-    <div className="h-[70px] fixed top-0  right-0 z-60  w-full items-center flex p-3 sm:p-8 justify-between bg-[rgba(29,98,127,1)]">
+    <div className="h-[70px] fixed top-0  right-0 z-60  w-full items-center flex p-3 sm:p-8 justify-between bg-[var(--color-blue-dark)]">
       <div className="flex items-center justify-between">
         <button
           onClick={() => setIsSidebarOpen(true)}
@@ -27,7 +27,7 @@ export default function CommonHeader({ setIsSidebarOpen }) {
             />
           </svg>
         </button>
-        {/* <button onClick={() => router.push("/logout")}>Logout</button> */}
+        <button onClick={() => router.push("/logout")}>Logout</button>
 
         <div className="w-[120px] h-[30px] sm:w-[150px] sm:h-[35px] md:w-[175px] md:h-[41px] relative">
           <Image
@@ -48,7 +48,7 @@ export default function CommonHeader({ setIsSidebarOpen }) {
             className="rounded-full"
           />
         </div>
-        <span className="mr-1 sm:mr-2 text-[16px] text-[rgba(255,255,255,1)] font-medium">
+        <span className="mr-1 sm:mr-2 text-[16px] text-[var(--color-white-rgba)] font-medium">
           Gerald Yap
         </span>
         <Image

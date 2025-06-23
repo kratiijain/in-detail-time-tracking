@@ -67,15 +67,15 @@ export default function ClientCard({ clientName, project, tasks }) {
   const getRowColor = (status) => {
     switch (status) {
       case "in-progress":
-        return "bg-[#E0F2F9]";
+        return "bg-[var(--color-light-blue)]";
       case "pending":
-        return "bg-[#E2E2E2]";
+        return "bg-[var(--color-light-gray)]";
       case "completed":
-        return "bg-[#F6F2BB]";
+        return "bg-[var(--color-soft-yellow)]";
       case "closed":
-        return "bg-[#CFDEE5]";
+        return "bg-[var(--color-powder-blue)]";
       default:
-        return "bg-white";
+        return "bg-[var(--color-white)]";
     }
   };
   const renderStatusContent = (status, content) => {
@@ -111,15 +111,18 @@ export default function ClientCard({ clientName, project, tasks }) {
   return (
     <div>
       {data.map((client, i) => (
-        <div key={i} className="bg-[#F7F7F7] rounded-md mb-6 overflow-x-auto">
+        <div
+          key={i}
+          className="bg-[var(--color-neutral-gray)] rounded-md mb-6 overflow-x-auto"
+        >
           {/* Header */}
           <div className="p-2 ">
-            <h2 className="sm:text-[24px] text-[20px] text-[#000000] font-[400] font-helvetica">
+            <h2 className="sm:text-[24px] text-[20px] text-[var(--color-black)] font-[400] font-helvetica">
               {client.clientName}
             </h2>
 
-            <div className="flex w-full justify-between bg-[#2489B3] px-2 py-1 rounded mt-2">
-              <div className="flex gap-1 items-center text-[#FFFFFF] text-[14px] font-Figtree">
+            <div className="flex w-full justify-between bg-[var(--color-blue-primary)] px-2 py-1 rounded mt-2">
+              <div className="flex gap-1 items-center text-[var(--color-white)] text-[14px] font-Figtree">
                 <span className="font-bold">{client.project}</span>
                 <span>|</span>
                 <div className="flex gap-1 font-normal">
@@ -142,7 +145,7 @@ export default function ClientCard({ clientName, project, tasks }) {
 
           {/* Table */}
           <table className="w-full text-[9px] font-Figtree border-separate border-spacing-y-2 border-spacing-x-2">
-            <thead className="sticky top-0 bg-[#FFFFFF] text-[#000000] font-medium">
+            <thead className="sticky top-0 bg-[var(--color-white)] text-[var(--color-black)] font-medium">
               <tr>
                 <th className="text-center ">TASK</th>
                 <th className="text-center ">STATUS</th>
@@ -158,7 +161,7 @@ export default function ClientCard({ clientName, project, tasks }) {
                   key={index}
                   className={`${getRowColor(
                     task.status
-                  )} text-[#000000]  font-Figtree  transition-all duration-200`}
+                  )} text-[var(--color-black)]  font-Figtree  transition-all duration-200`}
                 >
                   <td className="px-4 py-2  text-[12.5px]  font-normal rounded-[2px]">
                     {task.task}
@@ -175,7 +178,7 @@ export default function ClientCard({ clientName, project, tasks }) {
                   {task.status === "completed" ? (
                     <td
                       colSpan={2}
-                      className="px-4 py-2 text-[12px] font-bold rounded-[2px] bg-[#F6F2BB]"
+                      className="px-4 py-2 text-[12px] font-bold rounded-[2px] bg-[var(--color-soft-yellow)]"
                     >
                       <div className="flex justify-between items-center w-full">
                         <span>{task.invoice}</span>

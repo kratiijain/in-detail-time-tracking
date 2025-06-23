@@ -14,7 +14,7 @@ export default function Sidebar({ setIsOpen, isOpen }) {
     >
       <button
         onClick={() => setIsOpen(false)}
-        className="md:hidden text-[#000000] absolute top-4 right-4"
+        className="md:hidden text-[var(--color-black)] absolute top-4 right-4"
       >
         ✕
       </button>

@@ -8,7 +8,7 @@ export default function LogoutPage() {
 
   useEffect(() => {
     Cookies.remove("isLoggedIn");
-    router.push("/authStack/login");
+    router.replace("/authStack/login");
   }, []);
 
   return null;
