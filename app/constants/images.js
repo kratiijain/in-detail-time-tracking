@@ -13,6 +13,7 @@ import iconDelete from "../../public/images/icon-delete.webp";
 import iconPending from "../../public/images/icon-loader-pending.webp";
 import iconInprogress from "../../public/images/icon-clock-inprogress.webp";
 import iconClosed from "../../public/images/icon-closed.webp";
+import iconClientLink from "../../public/images/icon-client-link.webp";
 export const images = {
   logoIndetail,
   logoHeader,
@@ -29,4 +30,5 @@ export const images = {
   iconPending,
   iconInprogress,
   iconClosed,
+  iconClientLink,
 };

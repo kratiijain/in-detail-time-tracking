@@ -3,9 +3,12 @@ import ClientCard from "@/app/components/appComponents/clientCard";
 import ProgressBar from "@/app/components/appComponents/progressBar";
 import { images } from "@/app/constants/images";
 import Image from "next/image";
+import { useRouter } from "next/navigation";
+
 import React, { useState } from "react";
 
 export default function dashboardTeamMemberDetail() {
+  const router = useRouter();
   const [modalAddTask, setModalAddTask] = useState(false);
 
   const clients = [
@@ -103,6 +106,7 @@ export default function dashboardTeamMemberDetail() {
             </div>
             <div
               // onClick={() => setIsOpen(true)}
+              onClick={() => router.push("/dashboard/add-projects-single")}
               className="w-[26px] h-[26px] sm:w-[36px] sm:h-[36px]  relative"
             >
               <Image

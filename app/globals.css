@@ -55,4 +55,5 @@ body {
   --color-bright-blue: rgba(38, 156, 205, 1);
   --color-sky-blue: rgba(35, 129, 169, 1);
   --color-deep-blue: rgba(11, 88, 120, 1);
+  --color-custom-border: #c4c4c4;
 }
